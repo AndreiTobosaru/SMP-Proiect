@@ -14,7 +14,7 @@ const int MAXSTEPDURATION = 300;
 const int MINSTEPDURATION = 150; 
 
 byte desene[6][8] = {
-  // 1: masina sus
+  // 1: camion sus
   { B00000,
     B01110,
     B11111,
@@ -23,7 +23,7 @@ byte desene[6][8] = {
     B00000,
     B00000,
     B00000}
-  // 2: masina jos
+  // 2: camion jos
   ,{B00000,
     B00000,
     B00000,
@@ -83,7 +83,7 @@ char crash2glyphs[NCARPOSITIONS][2] = {
   {5,BLANK},{6,BLANK},{BLANK,5},{BLANK,6}
 };
 
-const int ROADLEN = 15; // latimea LCD fara masina (16 - 1)
+const int ROADLEN = 15; // lungime LCD fara camion (16 - 1)
 int road[ROADLEN]; // pozitia celorlalte masini
 char road_buff[2+ROADLEN];
 int road_index;
